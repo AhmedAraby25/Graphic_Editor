@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/graphicEditorCustomeStyle.css">
+    <title>Hello, Graphic Editor!</title>
+</head>
+<body>
+
+<h1>Hello, Graphic Editor!</h1>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="check-shape-msg">Check the shape you want</div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div id="response"></div>
+        </div>
+    </div>
+    <form action="">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="circleCheck" value="circle">
+                    <label class="form-check-label" for="circleCheck">Circle</label>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="rectangleCheck" value="rectangle">
+                    <label class="form-check-label" for="rectangleCheck">Rectangle</label>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="squareCheck" value="square">
+                    <label class="form-check-label" for="squareCheck">Square</label>
+                </div>
+            </div>
+        </div>
+        <!---------- Shapes Properties ----------------->
+        <section id="shapes_properties">
+            <div class="row shapes-inputs">
+                <!--Circle-->
+                <div class="col-md-3 circle-section">
+                    <div class="form-group">
+                        <label for="circle-perimeter">Perimeter</label>
+                        <input type="number" min="0" class="form-control" id="circle-perimeter" placeholder="Enter circle perimeter">
+                    </div>
+                    <div class="form-group">
+                        <label>Border</label>
+                        <input type="text" maxlength="10" class="form-control" id="circle-border-color" placeholder="color">
+                        <br>
+                        <input type="number" min="0" class="form-control" id="circle-border-width" placeholder="width">
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+                <!--Rectangle-->
+                <div class="col-md-3 rectangle-section">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="rectangle-width">Width</label>
+                                <input type="number" min="0" class="form-control" id="rectangle-width" placeholder="width">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="rectangle-height">Height</label>
+                                <input type="number" min="0" class="form-control" id="rectangle-height" placeholder="height">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                        <div class="form-group">
+                                <label>Border</label>
+                                <input type="text" maxlength="10" class="form-control" id="rectangle-border-color" placeholder="color">
+                                <br>
+                                <input type="number" min="0" class="form-control" id="rectangle-border-width" placeholder="width">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+                <!--Square-->
+                <div class="col-md-3 square-section">
+                    <div class="form-group">
+                        <label for="side-length">Side Length</label>
+                        <input type="number"  min="0" class="form-control" id="side-length" placeholder="Enter square side length">
+                    </div>
+                    <div class="form-group">
+                        <label>Border</label>
+                        <input type="text"  maxlength="10" class="form-control" id="square-border-color" placeholder="color">
+                        <br>
+                        <input type="number" min="0" class="form-control" id="square-border-width" placeholder="width">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="row">
+            <div class="col-md-12">
+                <button type="button" value="Submit" class="btn btn-lg submit-btn" id="submit-button">Submit</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="assets/js/myScript.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+h1{
+    color: #903838;
+    text-align: center;
+}
+.check-shape-msg {
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-style: oblique;
+}
+.form-check-input {
+    width: 30px;
+    height: 20px;
+}
+.form-check-label {
+    margin-left: 15px;
+}
+.shapes-inputs {
+    margin-top: 40px;
+}
+.square-section, .circle-section, .rectangle-section {
+    visibility: hidden;
+}
+
+.submit-btn {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+#response {
+    width: 100%;
+    height: auto;
+    padding: 15px;
+    background: #6a5c39;
+    color: #f1f1f1;
+    visibility: hidden;
+}
+
+#shapes_properties {
+    display: none;
+}
