@@ -61,9 +61,11 @@ Desing is followed by this structure:
 3- each concrete shape class implement its own  draw function and have its own attributes
 4- ShapeFactory class is the apply of factory design pattern while the list of concrete shapes classes which extend from shape abstract class are the application of strategy pattern
 ```
-### steps to run the application
-Just clone the repo in your Apache root directory then browse the project directory as follow: localhost:$port/graphic_editor_test/
-
+### Steps to run the application
+Just clone the repo in your Apache root directory then browse the project directory as follow: 
+```web
+localhost:$port/graphic_editor_test/
+```
 ### You can find the output binary files of the created shapes in the following structure directory:
 ```directory
 -- graphic_editor_test/
